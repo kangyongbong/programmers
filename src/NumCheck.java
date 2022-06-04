@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Random;
 
-public class numCheck {
+public class NumCheck {
     public static void main(String[] args) {
         짝수홀수();
 
