@@ -38,18 +38,18 @@ public class NumberToEng {
         }
 
         public NumToEng replace() {
-            for (Eng value : Eng.values()) {
-                num = num.replaceAll(value.toString(), value.getMessage());
+            for (EngToNum value : EngToNum.values()) {
+                num = num.replaceAll(value.toString(), value.getEngToNum());
             }
             return this;
         }
 
         public int getInt() {
-            return Integer.parseInt(num);
+            return Integer.parseInt(this.num);
         }
     }
 
-    static enum Eng {
+    enum EngToNum {
         zero("0"),
         one("1"),
         two("2"),
@@ -61,15 +61,14 @@ public class NumberToEng {
         eight("8"),
         nine("9");
 
-        Eng(String message) {
-            this.message = message;
+        private final String engToNum;
+
+        EngToNum(String engToNum) {
+            this.engToNum = engToNum;
         }
 
-        private final String message;
-
-        public String getMessage() {
-            return message;
+        public String getEngToNum() {
+            return engToNum;
         }
     }
-
 }
