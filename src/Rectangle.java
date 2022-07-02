@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class sixshopCoTe {
+public class Rectangle {
 
 
     public static void main(String[] args) {
@@ -60,9 +60,7 @@ public class sixshopCoTe {
 
     public static void solution2(int v) {
         for (int i = 1; i <= v; i++) {
-            StringBuilder start = new StringBuilder();
-            start.append("*".repeat(Math.max(0, i)));
-            System.out.println("start = " + start.toString());
+            System.out.println("start = " + "*".repeat(Math.max(0, i)));
         }
     }
 
