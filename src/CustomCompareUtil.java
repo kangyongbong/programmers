@@ -42,7 +42,7 @@ public class CustomCompareUtil implements Comparator<String> {
         return leftLen - rightLen;
     }
 
-    private static int makeSortedByNumber(String left, String right) {
+    private int makeSortedByNumber(String left, String right) {
         double leftDouble = Double.parseDouble(left);
         double rightDouble = Double.parseDouble(right);
         if (leftDouble > rightDouble) {
